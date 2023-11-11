@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="./images/favicon.ico?v=2">
+    <title>Sorting Visualizer</title>
+</head>
+
+<body>
+    <header>
+        <h1 align="center" style="font-size: 50px;">
+            Sorting Visualizer
+        </h1>
+        <nav>
+            <div class="rank">
+                <div class="file gap-2 d-sm-flex">
+                    <button type="button" class="button buttonHover" id="newArray" >New Array</button>
+                </div>
+                <div class="file" id="input" style="display: flex; flex-direction: column;">
+                    <div>
+                        <label for="arraySize">Size</label>
+                        <input id="arraySize" type="range" min="5" max="100" step=1 value=60>
+                    </div>
+                    <div>
+                        <label for="speedInput">Speed</label>
+                        <input id="speedInput" type="range" min="20" max="300" stepDown=10 value=60>
+                    </div>
+                </div>
+                <div class="file d-sm-flex justify-content-end">
+                    <button type="button" class="sortingButton sortingButtonHover" id="bubbleSort">Bubble</button>
+                    <button type="button" class="sortingButton sortingButtonHover" id="bucketSort">Bucket</button>
+                    <button type="button" class="sortingButton sortingButtonHover" id="selectionSort">Selection</button>
+                    <button type="button" class="sortingButton sortingButtonHover" id="insertionSort">Insertion</button>
+                    <button type="button" class="sortingButton sortingButtonHover" id="quickSort">Quick</button>
+                    <button type="button" class="sortingButton sortingButtonHover" id="mergeSort">Merge</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="Action">
+        <centre>
+            <div id="columns" class="flexContainer"></div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+            <script src="scripts/index.js"></script>
+            <script src="scripts/bubble.js"></script>
+            <script src="scripts/bucket.js"></script>
+            <script src="scripts/insertion.js"></script>
+            <script src="scripts/merge.js"></script>
+            <script src="scripts/quick.js"></script>
+            <script src="scripts/selection.js"></script>
+        </centre>
+    </section>
+
+    <footer></footer>
+</body>
+
+</html>
